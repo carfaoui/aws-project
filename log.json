@@ -1,0 +1,23 @@
+{
+  "changed": true,
+  "cmd": "kubeadm init --pod-network-cidr=10.0.1.0/24 >> cluster_initialized.txt",
+  "delta": "0:00:01.693043",
+  "end": "2020-11-09 15:11:38.716507",
+  "msg": "non-zero return code",
+  "rc": 1,
+  "start": "2020-11-09 15:11:37.023464",
+  "stderr": "I1109 15:11:37.736307    3347 version.go:251] remote version is much newer: v1.19.3; falling back to: stable-1.17\nW1109 15:11:38.074230    3347 validation.go:28] Cannot validate kube-proxy config - no validator is available\nW1109 15:11:38.074251    3347 validation.go:28] Cannot validate kubelet config - no validator is available\n\t[WARNING Service-Docker]: docker service is not enabled, please run 'systemctl enable docker.service'\n\t[WARNING IsDockerSystemdCheck]: detected \"cgroupfs\" as the Docker cgroup driver. The recommended driver is \"systemd\". Please follow the guide at https://kubernetes.io/docs/setup/cri/\nerror execution phase preflight: [preflight] Some fatal errors occurred:\n\t[ERROR Service-Docker]: docker service is not active, please run 'systemctl start docker.service'\n[preflight] If you know what you are doing, you can make a check non-fatal with `--ignore-preflight-errors=...`\nTo see the stack trace of this error execute with --v=5 or higher",
+  "stderr_lines": [
+    "I1109 15:11:37.736307    3347 version.go:251] remote version is much newer: v1.19.3; falling back to: stable-1.17",
+    "W1109 15:11:38.074230    3347 validation.go:28] Cannot validate kube-proxy config - no validator is available",
+    "W1109 15:11:38.074251    3347 validation.go:28] Cannot validate kubelet config - no validator is available",
+    "\t[WARNING Service-Docker]: docker service is not enabled, please run 'systemctl enable docker.service'",
+    "\t[WARNING IsDockerSystemdCheck]: detected \"cgroupfs\" as the Docker cgroup driver. The recommended driver is \"systemd\". Please follow the guide at https://kubernetes.io/docs/setup/cri/",
+    "error execution phase preflight: [preflight] Some fatal errors occurred:",
+    "\t[ERROR Service-Docker]: docker service is not active, please run 'systemctl start docker.service'",
+    "[preflight] If you know what you are doing, you can make a check non-fatal with `--ignore-preflight-errors=...`",
+    "To see the stack trace of this error execute with --v=5 or higher"
+  ],
+  "stdout": "",
+  "stdout_lines": []
+}
